@@ -1,6 +1,6 @@
 # Tenant Member Roles
 
-Tenant Operator tenant members can have one of following 3 roles:
+Tenant Operator tenant members can have one of the following 3 roles:
 
 1. Owner
 2. Editor
@@ -9,15 +9,15 @@ Tenant Operator tenant members can have one of following 3 roles:
 ## 1. Owner
 
 ![image](./images/tenant-operator-owner-overview.png)
-fig 2. Shows how tenant owners manage there tenant using Tenant Operator
+fig 2. Shows how tenant owners manage their tenant using Tenant Operator
 
-Owner is an admin of a tenant with some restrictions. It has privilege to see all resources in there Tenant with some additional privileges. They can also create new `namespaces`.
+Owner is an admin of a tenant with some restrictions. It has privilege to see all resources in their Tenant with some additional privileges. An owner can also create new `namespaces`.
 
 *Owners will also inherit roles from `Edit` and `View`.*
 
 #### Access Permissions
 
-* Role and RoleBinding access in `Project` :
+* Role and RoleBinding access in `Project`
   * delete
   * create
   * list
@@ -59,9 +59,9 @@ Owner is an admin of a tenant with some restrictions. It has privilege to see al
 ## 2. Editor
 
 ![image](./images/tenant-operator-edit-overview.png)
-fig 3. Shows editors role in a tenant using Tenant Operator
+fig 3. Shows editor's role in a tenant using Tenant Operator
 
-Edit role will have edit access on there `Projects`, but they wont have access on `Roles` or `RoleBindings`.
+Edit role will have edit access on their `Projects`, but they will not have access on `Roles` or `RoleBindings`.
 
 *Editors will also inhert `View` role.*
 
@@ -96,7 +96,7 @@ Edit role will have edit access on there `Projects`, but they wont have access o
   * deletecollection
   * patch
   * update
-* Build, BuildConfig, Buildlog, DeploymentConfig, Deployment, ConfigMap, ImageStream , ImageStreamImage and ImageStreamMapping access in `Project`
+* Build, BuildConfig, Buildlog, DeploymentConfig, Deployment, ConfigMap, ImageStream, ImageStreamImage and ImageStreamMapping access in `Project`
   * get
   * list
   * watch
@@ -166,9 +166,9 @@ Edit role will have edit access on there `Projects`, but they wont have access o
 ## 3. Viewer
 
 ![image](./images/tenant-operator-view-overview.png)
-fig 4. Shows viewers role in a tenant using Tenant Operator
+fig 4. Shows viewer's role in a tenant using Tenant Operator
 
-Viewer role will only have view access on there `Project`.
+Viewer role will only have view access on their `Project`.
 
 #### Access Permissions 
 
@@ -211,7 +211,7 @@ Viewer role will only have view access on there `Project`.
   * get
   * list
   * watch
-* Get,list,watch access on all projects related to
+* Get, list, and watch access on all projects related to
   * Elasticsearch
   * Logging
   * Kibana
